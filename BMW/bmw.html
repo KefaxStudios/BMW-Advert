@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW ADVERT</title>
+    <link rel="stylesheet" href="style/bmw.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="icons">
+                <i class="fas fa-home"></i>
+                <a href="" class="big">BMW Advert</a>
+            </div>
+            <div class="links">
+                <a href="" class="active">Home</a>
+                <a href="about me.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="heading">
+            <h1>BMW X6 M50d</h1>
+            <p>Aug 10, 2023 Expected launch</p>
+        </div>
+        <div class="container">
+            <div class="thumbs">
+                <ul>
+                    <li><a><img src="./images/thumb3.png" alt="" onclick="changeImage('./images/car1.png')"class="active"></a></li>
+                    <li><a><img src="./images/thumb2.png" alt="" onclick="changeImage('./images/car2.png')"></a></li>
+                    <li><a><img src="./images/thumb1.png" alt="" onclick="changeImage('./images/car3.png')"></a></li>
+                </ul>        
+            </div>
+            <div class="real" id="photo">
+                <img src="./images/car3.png" alt="" class="mainImage">
+            </div>
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-car-on"></i>
+                <i class="fas fa-gear"></i>
+                <i class="fas fa-envelope"></i>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="detail">
+                <h3>Description</h3>
+                <p>The BMW X6 M50d is a high-performance Sports Activity Coupe that delivers power, style, and luxury. With its powerful six-cylinder diesel engine, the X6 M50d produces an impressive 400 horsepower and 560 lb-ft of torque, making it one of the most dynamic and exhilarating SUVs on the road today. The X6 M50d's sporty exterior design and luxurious interior amenities make it a true standout in its class. With cutting-edge technology and advanced safety features, the BMW X6 M50d is a true driver's car that delivers an unmatched driving experience. If you're looking for a powerful and luxurious SUV that's sure to turn heads, the BMW X6 M50d is the perfect choice.
+                </p>
+            </div>
+            <div class="box">
+                <h3>400 hp</h3>
+                <p>Engine Power</p>
+            </div>
+            <div class="box">
+                <h3>1.8 L</h3>
+                <p>Engine Capacity</p>
+            </div>
+            <div class="box">
+                <h3>180km/h</h3>
+                <p>Engine Power</p>
+            </div>
+            <div class="box">
+                <h3>5.8s</h3>
+                <p>0-100km/h</p>
+            </div>
+            <div class="box">
+                <h3>340Nm</h3>
+                <p>Engine Toque</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="quick-links">
+        <div class="heading">
+            <h2>BMW Advert</h2>
+        </div>
+            <div class="container">
+                <div class="name">
+                    <h3>Daily Living Associates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, porro? 
+                        Non iusto aliquam debitis ratione nostrum rerum, necessitatibus dolor 
+                        temporibus maiores cum accusantium adipisci vel quas eum sunt officiis 
+                        nesciunt quo quaerat asperiores consequuntur nam quibusdam ex! Ipsum 
+                        praesentium, ad saepe harum explicabo facere, quaerat distinctio animi 
+                        porro temporibus alias.
+                    </p>
+                </div>
+                <div class="nav">
+                    <a href="">BMW advert</a>
+                    <a href="about me.html">Contact Us</a>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptate 
+                        architecto inventore recusandae! Officia adipisci sed nisi a natus ullam 
+                        blanditiis dicta ex amet ducimus! Accusamus harum minima laborum ullam!
+                    </p>
+                    <div class="sub">
+                        <input type="email">
+                        <input type="submit">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script>
+        function changeImage(anything) {
+            document.querySelector('.mainImage').src = anything;
+        }
+
+        function changeColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
