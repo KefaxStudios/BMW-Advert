@@ -1,0 +1,345 @@
+:root{
+    --dark_blue: #11101e;
+    --light_blue: #201b2e;
+    --light_blue2: #161320;
+    --red: #d5041a;
+    --dark_red: #9f071c;
+    --white: #fff;
+    --white_text: rgb(236, 228, 228);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 18px;
+}
+
+/* Change scrollbar color */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--dark_red);
+  }
+  
+  /* Change scrollbar width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation{
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .icons{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.navigation .icons i{
+    margin-right: 10px;
+}
+
+.navigation .links a{
+    margin-right: 30px;
+}
+
+.navigation .links .active{
+    color: var(--red);
+}
+
+.navigation .big{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.heading{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.heading h1{
+    color: var(--white);
+    font-size: 60px;
+}
+
+.heading p{
+    color: var(--red);
+}
+
+.showcase{
+    padding: 20px 4%;
+}
+
+.showcase .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.showcase .container .thumbs img{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.showcase .container .thumbs img.active{
+    opacity: 1;
+}
+
+.showcase .container .icons i{
+    display: block;
+    cursor: pointer;
+    margin: 30px 2px;
+    color: var(--white);
+}
+
+.showcase .container .thumbs ul{
+    list-style-type: none;
+}
+
+.showcase .container .real img {
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: var(--light_blue);
+    padding: 20px 4%;
+}
+
+.footer .container{
+    padding: 2rem;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.footer .container .detail{
+    width: 100%;
+    grid-column: span 5;
+}
+
+.footer .container .box{
+    border-top: 1px solid var(--dark_red);
+    margin: 2px 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--light_blue2);
+}
+
+.footer .container .detail h3{
+    margin-bottom: 20px;
+}
+
+.footer .container .detail p, .box p{
+    opacity: .6;
+}
+
+.quick-links{
+    padding: 30px 5%;
+    color: white;
+}
+
+.quick-links .container{
+    display: grid;
+    grid-template-columns: .8fr 1fr .8fr;
+    align-content: flex-start;
+}
+
+.quick-links .container .name h3, .footer .container .subscribe h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.quick-links .container .nav{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-links .container .nav a{
+    margin-right: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: verdana;
+}
+
+.quick-links .container .subscribe p{
+    margin: 15px 0px;
+}
+
+.quick-links .container .sub input[type=email]{
+    border: 3px solid var(--dark_red);
+    background-color: transparent;
+    padding: 6px 15px;
+    display: inline;
+    color: white;
+}
+
+.quick-links .container .sub input[type=submit]{
+    background-color: var(--dark_red);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    display: inline;
+    padding: 9px 15px;
+    border: none;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.quick-links .container .sub input[type=email]:focus{
+    outline: none;
+}
+
+
+.consult{
+    margin-top: 3rem;
+    color: white;
+    padding: 2px 5%;
+}
+
+.consult .heading h2{
+    margin-bottom: 3rem;
+}
+
+.consult .whole{
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    gap: 50px;
+}
+
+.consult .whole .info h3{
+    font-size: 25px;
+    font-family: verdana;
+    margin-bottom: 20px;
+}
+
+.consult .whole .form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.consult .whole .form form label{
+    font-weight: 700;
+    font-family: verdana;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.consult .whole .form form input{
+    width: 90%;
+    padding: 13px 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+.consult .whole .form form input:focus{
+    outline-color: var(--dark_red);
+}
+
+.consult .whole .form form a.submit{
+    color: white;
+    background-color: var(--dark_red);
+    border-radius: 20px;
+    padding: 8px 55px;
+    text-transform: uppercase;
+    font-family: verdana;
+}
+
+@media (max-width: 970px) {
+    .quick-links .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .showcase .container {
+        flex-direction: column;
+    }
+    
+    .showcase .container .thumbs ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .showcase .container .icons{ 
+        display: flex;
+    }
+
+    .showcase .container .icons i{
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .consult .whole {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .footer .container .detail {
+        grid-column: span 2;
+    }
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .consult .whole .form form {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .footer .container .detail {
+        grid-column: span 1;
+    }
+    .footer .container{
+        grid-template-columns: 1fr;
+    }
+}
